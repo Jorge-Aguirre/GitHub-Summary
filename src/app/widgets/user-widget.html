@@ -1,9 +1,10 @@
 <div class="col-md-3 col-sm-3 col-xs-3">
   <div class="thumbnail">
-    <img ng-src="{{user.avatar_url}}">
+    <img class="user-img" ng-src="{{user.avatar_url}}">
     <div class="caption">
-      <h3>{{user.login}}</h3>
-      <p></p>
+      <h3>{{user.name}}</h3>
+      <a href="{{user.html_url}}" target="_blank">GitHub Page</a> <br />
+      <a href="users/{{user.login}}/repositories">Repositories</a>
     </div>
   </div>
 </div>

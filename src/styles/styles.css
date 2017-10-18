@@ -176,3 +176,14 @@
     .widget .tab-content {
         margin-bottom: 10px;
     }
+
+    .thumbnail {
+        height: 450px;
+        overflow: hidden;
+        border: 1px solid black;
+    }
+
+    .thumbnail .user-img {
+        width: 100%;
+        min-height: 70%;
+    }

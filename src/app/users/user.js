@@ -4,22 +4,32 @@
 
   angular
     .module('GitHubTest.users')
-    .factory('user', user);
+    .factory('userService', userService);
 
-  user.$inject = ['$http', '$q'];
+  userService.$inject = ['$http', '$q'];
 
-  function user($http, $q) {
+  function userService($http, $q) {
     var urlBase = 'https://api.github.com';
 
     var service = {
       getUsers: getUsers,
+      getUser: getUser
     };
 
     return service;
     ///////////////////////////
 
-    function getUsers() {
-      return $http.get(urlBase + '/users');
+    function getUsers(since) {
+      var urlStr = urlBase + '/users';
+
+      if (since) {
+        urlStr += '?since=' + since;
+      }
+      return $http.get(urlStr);
+    }
+
+    function getUser(username) {
+      return $http.get(urlBase + '/users/' + username);
     }
   }
 })();

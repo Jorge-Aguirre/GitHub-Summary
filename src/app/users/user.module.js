@@ -3,5 +3,5 @@
   'use strict';
 
   angular
-    .module('GitHubTest.users', []);
+    .module('GitHubTest.users', ['ngSanitize']);
 })();

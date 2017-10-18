@@ -8,14 +8,9 @@
 
   function userWidget() {
     var directive = {
-      templateUrl: 'app/widgets/user-widget.html',
-      link: link
+      templateUrl: 'app/widgets/user-widget.html'
     };
     return directive;
-    //////////////////////
-
-    function link(scope, element, attr) {
-      
-    }
+    /////////////////////
   }
 })();

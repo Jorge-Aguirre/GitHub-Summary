@@ -4,12 +4,14 @@
 
   angular
     .module('GitHubTest')
-    .config(RouterConfiguration)
+    .config(AppConfig)
 
-  RouterConfiguration.$inject = ['$locationProvider', '$routeProvider'];
+  AppConfig.$inject = ['$locationProvider', '$routeProvider', '$httpProvider'];
 
-  function RouterConfiguration($locationProvider, $routeProvider) {
+  function AppConfig($locationProvider, $routeProvider, $httpProvider) {
     $locationProvider.html5Mode(true).hashPrefix('!');
+
+    $httpProvider.defaults.headers.common.Authorization = 'Bearer ece5e2818a94925eb8f0a1edebff0192494200de';
 
     $routeProvider.
       when('/users', {
