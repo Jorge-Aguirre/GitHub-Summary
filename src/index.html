@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="GitHubTest">
+  <head>
+    <meta charset="utf-8">
+    <base href="/">
+    <title>GitHub Test</title>
+
+    <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.css" />
+    <link rel="stylesheet" href="bower_components/font-awesome/css/font-awesome.css" />
+    <link rel="stylesheet" href="bower_components/toastr/toastr.css" />
+
+    <link rel="stylesheet" href="styles/styles.css" />
+
+    <script src="bower_components/jquery/dist/jquery.js"></script>
+    <script src="bower_components/angular/angular.js"></script>
+    <script src="bower_components/angular-route/angular-route.js"></script>
+    <script src="bower_components/bootstrap/dist/js/bootstrap.js"></script>
+    <script src="bower_components/toastr/toastr.js"></script>
+
+    <script src="app/app.module.js"></script>
+    <script src="app/users/user.module.js"></script>
+    <script src="app/widgets/widgets.module.js"></script>
+
+    <script src="app/users/user.js"></script>
+    <script src="app/users/user.controller.js"></script>
+
+    <script src="app/widgets/user-widget.js"></script>
+
+    <script src="app/app.config.js"></script>
+  </head>
+  <body>
+    <div class="view-container">
+      <div ng-view class="view-frame"></div>
+    </div>
+  </body>
+</html>
