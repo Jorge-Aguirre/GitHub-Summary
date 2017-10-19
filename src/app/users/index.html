@@ -5,7 +5,7 @@
         <div class="widget wviolet">
           <div ht-widget-header title="{{vm.title}}"></div>
           <div class="widget-content user">
-            <h3>{{vm.title}}</h3>
+            <h1>{{vm.title}}</h1>
 
             <div class="row">
               <user-widget ng-repeat="user in vm.users"></user-widget>
@@ -13,7 +13,7 @@
           </div>
           <div class="widget-foot">
             <div class="clearfix" >
-                <a ng-href="users?since={{vm.since}}">Next >></a>
+                <a ng-href="#/users?since={{vm.since}}">Next >></a>
             </div>
           </div>
         </div>

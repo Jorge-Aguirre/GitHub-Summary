@@ -20,7 +20,6 @@
 
       userService.getUsers(since).then(function (response) {
         response.data.forEach(function(user) {
-
           var userData = {
             avatar_url: user.avatar_url,
             login: user.login,

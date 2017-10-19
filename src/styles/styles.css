@@ -178,12 +178,18 @@
     }
 
     .thumbnail {
-        height: 450px;
+        height: 400px;
         overflow: hidden;
         border: 1px solid black;
     }
 
     .thumbnail .user-img {
-        width: 100%;
-        min-height: 70%;
+        max-width: auto;
+        height: 70%;
+    }
+
+    .panel {
+        height: 300px;
+        overflow: hidden;
+        border: 1px solid black;
     }
